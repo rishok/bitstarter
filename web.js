@@ -1,5 +1,7 @@
-var fs = require("fs");
-var buf = fs.readFileSync("/index.html");
+var http = require('http'),
+    fs = require('fs');
+
+var buf = fs.readFileSync('index.html');
 var index = buf.toString();
 
 var express = require('express');
